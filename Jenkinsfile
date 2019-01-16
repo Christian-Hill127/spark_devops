@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Mvn Class') {
       steps {
-        sh 'mvn package'
+        sh 'mvn package -DskipTests'
       }
     }
   }
