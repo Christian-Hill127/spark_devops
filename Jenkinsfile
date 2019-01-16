@@ -6,5 +6,10 @@ pipeline {
         echo 'Hello World!'
       }
     }
+    stage('Mvn Class') {
+      steps {
+        sh 'mvn package'
+      }
+    }
   }
 }
